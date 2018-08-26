@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>Violências Invisíveis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+        color: teal
+    }
+
+    .chatbox {
+        width: 500px;
+        min-width: 75%;
+        height: 480px;
+        background: #ffffff;
+        padding: 25px;
+        position: fixed;
+        align-content: center fixed;
+        margin-top: 0px;
+
+    }
+
+    .chatlogs {
+        padding: 10px;
+        width: 100%;
+        height: 280px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .chatlogs::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .chatlogs::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #c2d6c2;
+    }
+
+    .chat {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    .chat .chat-message {
+        width: 80%;
+        padding: 15px;
+        margin: 5px 10px 0;
+        border-radius: 10px;
+        color: rgba(24, 29, 29, 0.63);
+        font-size: 15px;
+    }
+
+    .self .chat-message {
+        background: #c2d6c2b7;
+        margin: 5px 10px 10px 10px;
+      
+    }
+
+    .friend .chat-message {
+        background: rgba(0, 128, 128, 0.562);
+
+    }
+
+
+    .chat-from {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .chat-from textarea {
+        background: #ffffff;
+        width: 75%;
+        height: 50px;
+        border: 2px solid #eee;
+
+
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="fechar menu">
+
+            </a>
+            <h4>
+                <b>Violências Invisíveis</b>
+            </h4>
+
+        </div>
+        <div class="w3-bar-block">
+            <a href="assinado.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fa fa-pencil w3-margin-right"></i>ABAIXO-ASSINADO</a>
+            <a href="acompanhar.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-clock-o w3-margin-right"></i>ACOMPANHAMENTO</a>
+            <a href="tutorial.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-question  w3-margin-right"></i>TUTORIAL</a>
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-home w3-margin-right"></i>VOLTAR PARA PÁGINA PRINCIPAL</a>
+        </div>
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <header id="contact">
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </span>
+            <div class="w3-container">
+                <h1>
+                    <b></b>
+                    <font color="teal"></font>ASSINAR ABAIXO-ASSINADO
+                </h1>
+                </font>
+            </div>
+        </header>
+
+        <div class="w3-row-padding" style="margin:0 16px">
+            <h3>Bate papo</h3>
+            <div class="chatbox">
+                <div class="chatlogs">
+                    <div class="chat">
+                        <div class="chat friend">
+                            <p class="chat-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum"</p>
+                        </div>
+                        <div class="chat self">
+                            <p class="chat-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum"</p>
+                        </div>
+                        <div class="chat friend">
+                                <p class="chat-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum"</p>
+                            </div>
+                            <div class="chat self">
+                                    <p class="chat-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum"</p>
+                                </div>
+                    </div>
+                </div>
+                <div class="chat-from">
+                    <textarea></textarea>
+                    <button>Enviar</button></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script function w3_open() { document.getElementById( "mySidebar").style.display="block" ; document.getElementById(
+        "myOverlay").style.display="block" ; } function w3_close() { document.getElementById( "mySidebar").style.display="none" ; document.getElementById(
+        "myOverlay").style.display="none" ; } </script>
+
+</body >
+
+</html >

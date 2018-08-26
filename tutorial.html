@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>Violências Invisíveis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+        color: teal
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="fechar menu">
+
+            </a>
+            <h4>
+                <b>Violências Invisíveis</b>
+            </h4>
+
+        </div>
+        <div class="w3-bar-block">
+            <a href="assinado.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fa fa-pencil w3-margin-right"></i>ABAIXO-ASSINADO</a>
+            <a href="acompanhar.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-clock-o w3-margin-right"></i>ACOMPANHAMENTO</a>
+            <a href="tutorial.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-exclamation-circle w3-margin-right"></i>TUTORIAL</a>
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fa fa-home w3-margin-right"></i>VOLTAR PARA PÁGINA PRINCIPAL</a>
+        </div>
+
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <div class="w3-main" style="margin-left:300px">
+
+        <header id="contact">
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </span>
+            <div class="w3-container">
+                <h1>
+                    <b></b>
+                    <font color="teal"></font> TUTORIAL</h1>
+                </font>
+            </div>
+        </header>
+        <div align="center" padding-top="100px">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/39CprM640f8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+        </div>
+        
+    </div>
+    
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
